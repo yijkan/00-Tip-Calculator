@@ -36,18 +36,15 @@
                                     <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="dI3-IG-2dZ"/>
                                 </connections>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="il7-He-gT5">
-                                <rect key="frame" x="39" y="81" width="243" height="29"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill amount" textAlignment="right" minimumFontSize="17" id="wRO-Bv-blx">
+                                <rect key="frame" x="185" y="117" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="15%"/>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                </segments>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="eFC-fr-xzN"/>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="GDq-Nv-OlX"/>
                                 </connections>
-                            </segmentedControl>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ydb-hh-NTo">
                                 <rect key="frame" x="39" y="229" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,18 +94,24 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill amount" textAlignment="right" minimumFontSize="17" id="wRO-Bv-blx">
-                                <rect key="frame" x="185" y="117" width="97" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="il7-He-gT5">
+                                <rect key="frame" x="39" y="81" width="243" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
                                 <connections>
-                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="GDq-Nv-OlX"/>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="eFC-fr-xzN"/>
                                 </connections>
-                            </textField>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dCQ-ZM-2gf" appends="YES" id="Cvq-5M-UF8"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="TipTop: Tip Calculator" id="fMa-NP-h0o"/>
                     <connections>
@@ -121,9 +124,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="FfY-t1-twO">
+                <tapGestureRecognizer id="dCQ-ZM-2gf">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="Dga-ti-NcD"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="PYv-RJ-67Y"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
