@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I accidentally set the view alpha to 0 and was very confused about why my app just showed up as black...
 
 ## Credits
 
