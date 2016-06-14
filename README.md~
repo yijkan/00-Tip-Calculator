@@ -1,16 +1,16 @@
-# Project 1 - *Name of App Here*
+# Project 1 - TipTop
 
-**Name of your app** is a tip calculator application for iOS.
+TipTop is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: Yijin Kang
 
-Time spent: **X** hours spent in total
+Time spent: 1.5 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
@@ -21,13 +21,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [x] User can input how many people to split among
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/qChB5XU.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
