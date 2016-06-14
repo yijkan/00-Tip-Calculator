@@ -10,12 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let defaults = NSUserDefaults.standardUserDefaults()
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var splitField: UITextField!
     @IBOutlet weak var percentSegCon: UISegmentedControl!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var youPayLabel: UILabel!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        percentSegCon.selectedSegmentIndex = defaults.integerForKey("default_perc")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +34,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onTap(sender: AnyObject) {
-        print("tapped")
         view.endEditing(true)
+        percentSegCon.selectedSegmentIndex = (percentSegCon.selectedSegmentIndex + 1) % 3
     }
     
     @IBAction func calcTip(sender: AnyObject) {
